@@ -8,6 +8,8 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock x:Name="resultLabel" Text="?" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <Button x:Name="randomButton" Content="Shuffle" HorizontalAlignment="Center"  VerticalAlignment="Bottom" Click="randomButton_Click" Margin="88,0,89,92" Width="183"/>
 
     </Grid>
 </Page>

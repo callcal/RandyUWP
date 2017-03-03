@@ -22,9 +22,22 @@ namespace RandyUWP
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        bool isNumber = true;
         public MainPage()
         {
             this.InitializeComponent();
         }
-    }
+
+        private void randomButton_Click(object sender, RoutedEventArgs e)
+        {
+            resultLabel.Text = "...";
+
+            if (isNumber)
+            {
+                Random r = new Random();
+                resultLabel.Text = "" + r.Next(0, 100).ToString();
+
+            }
+        }
+    }   
 }
